@@ -2,7 +2,10 @@
 import "bootstrap";
 import "./style.css";
 
-window.onload = function() {};
+window.onload = function() {
+  document.querySelector(".card").classList.add(generateRandomSuit());
+  document.querySelector(".card").innerHTML.add(generateRandomNumber());
+};
 
 let generateRandomNumber = () => {
   let numbers = [
@@ -20,12 +23,12 @@ let generateRandomNumber = () => {
     "Q",
     "K"
   ];
-
   let indexNumber = Math.floor(Math.random() * numbers.length);
+  return numbers[indexNumber];
 };
 
 let generateRandomSuit = () => {
   let suit = ["diamante", "pica", "corazon", "trebol"];
-
   let indexSuit = Math.floor(Math.random() * suit.length);
+  return suit[indexSuit];
 };

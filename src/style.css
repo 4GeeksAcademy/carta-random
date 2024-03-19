@@ -14,19 +14,19 @@ body {
   position: absolute;
   top: 40%;
   left: 50%;
-  border: solid 2px black;
+  border: solid 3px #cfb53b;
   border-radius: 20px;
   width: 450px;
   height: 600px;
   transform: translate(-50%, -50%);
 }
 
-.card-header {
+.top-suit {
   font-size: 50px;
   color: red;
 }
 
-.card-body {
+.number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@ body {
   font-weight: bold;
 }
 
-.card-footer {
+.bottom-suit {
   display: flex;
   justify-content: end;
   font-size: 50px;
